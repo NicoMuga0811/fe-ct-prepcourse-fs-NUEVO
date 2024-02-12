@@ -5,6 +5,14 @@ function esAnagrama(str1, str2) {
   // IMPORTANTE: Un anagrama es una palabra que se forma
   // con las mismas letras que otra, pero en orden diferente.
   // Tu código:
+
+  var palabra1Invertida = ''
+
+  for(var i = str1.length -1; i >= 0; i--){
+    palabra1Invertida = palabra1Invertida + str1[i]
+  }
+
+  return palabra1Invertida === str2
 }
 
 module.exports = esAnagrama;
